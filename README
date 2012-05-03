@@ -1,0 +1,10 @@
+Cohaesus Projects Ltd PHP Project Jenkins CI Base Config
+------------------------------------------------------------
+Based on the work of Sebastian Bergmann, this is a base configuration for a PHP project to run in Jenkins.
+
+The code sniffing is configured for a Zend framework project and assumes that you have the ZF tree in 'library'.
+
+Licence
+------------------------------------------------------------
+As per the original work by Sebastian Bergmann and contributers, This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.
+http://creativecommons.org/licenses/by-sa/3.0/

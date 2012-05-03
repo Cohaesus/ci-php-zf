@@ -1,0 +1,15 @@
+<phpunit bootstrap="../tests/bootstrap.php">
+    <testsuite name="Cohaesus Test Suite">
+        <directory>../tests/application</directory>
+    </testsuite>
+    <logging>
+        <log type="coverage-html" target="coverage" title="Project"
+             charset="UTF-8" yui="true" highlight="true" lowUpperBound="35"
+             highLowerBound="70" />
+    </logging>
+    <filter>
+        <whitelist>
+            <directory suffix=".php">library/</directory>
+        </whitelist>
+    </filter>
+</phpunit>
