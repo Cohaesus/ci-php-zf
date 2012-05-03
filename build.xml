@@ -2,7 +2,7 @@
 
 <project name="Project Name" default="build">
     <target name="build"
-            depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpcb"/>
+            depends="prepare,lint,phploc,pdepend,phpmd-ci,phpcs-ci,phpcpd,phpdox,phpunit,phpcb"/>
 
     <target name="build-parallel"
             depends="prepare,lint,tools-parallel"/>
@@ -115,7 +115,7 @@
 
     <target name="phpunit" description="Run unit tests with PHPUnit">
         <exec executable="phpunit" failonerror="true">
-            <arg path="${basedir}/src/processor/tests" />
+            <arg path="${basedir}/src/tests" />
         </exec>
     </target>
     <target name="phpcb" description="Aggregate tool output with PHP_CodeBrowser">
